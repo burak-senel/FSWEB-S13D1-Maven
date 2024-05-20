@@ -40,7 +40,9 @@ return width*height;
     }
 
     public static double area(double radius) {
-        return 0.4;
-
+      if(radius<0){
+          return -1;
+      }
+return  radius*radius*Math.PI;
     }
 }
