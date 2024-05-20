@@ -33,8 +33,10 @@ return false;
     }
 
     public static double area(double width, double height) {
-        return 0.5;
-
+        if(width<0 || height<0){
+            return -1;
+        }
+return width*height;
     }
 
     public static double area(double radius) {
